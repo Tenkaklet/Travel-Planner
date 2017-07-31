@@ -54,7 +54,7 @@
               <h3 class="panel-title"><strong>Alternative {{$index + 1 }}</strong> <strong class="pull-right">{{trip.duration  | amDurationFormat : 'minute' }}</strong></h3>
             </uib-accordion-heading>
             <div uib-accordion-group class="panel-default" ng-repeat="ind_trip in trip.LegList.Leg" ng-if="ind_trip.type !== 'WALK'"
-              template-url="./extras/accordion.html">
+              template-url="views/extras/accordion.html">
               <uib-accordion-heading>
                 <strong>{{ind_trip.Origin.name}}</strong> <i class="glyphicon glyphicon-arrow-right"></i> <strong>{{ind_trip.Destination.name}}</strong>              Stops <strong>{{ind_trip.Stops.Stop.length}}</strong>
               </uib-accordion-heading>
